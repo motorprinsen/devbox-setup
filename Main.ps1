@@ -87,7 +87,7 @@ Write-Host "Enabling Hyper-V"
 Enable-WindowsOptionalFeature -Online -FeatureName:Microsoft-Hyper-V -All -NoRestart
 
 # Enable Sandbox
-Enable-WindowsOptionalFeature -Online -FeatureName "Containers-DisposableClientVM" -All
+Enable-WindowsOptionalFeature -Online -FeatureName "Containers-DisposableClientVM" -All -NoRestart
 
 Write-Host "Installing docker"
 choco install docker-desktop --yes
